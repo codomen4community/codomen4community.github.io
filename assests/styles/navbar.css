@@ -1,6 +1,6 @@
 @font-face {
   font-family: charger;
-  src: url("../fonts/Charger.otf");
+  src: url("./assests/fonts/Charger.otf");
 }
 body,
 #codomen,
@@ -22,13 +22,13 @@ body,
 
 nav#codomen {
   font-family: charger;
-  max-width: 1400px;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100px;
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
@@ -37,6 +37,14 @@ nav#codomen.scrolled {
   position: sticky;
   top: 0;
   background-color: var(--lightgreen);
+}
+
+#codomen #main-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #codomen #logo {
@@ -75,7 +83,7 @@ nav#codomen.scrolled {
 
 #codomen #menu > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /* width: 60%; */
 }
 
@@ -97,7 +105,7 @@ a:visited {
 }
 
 @media screen and (max-width: 950px) {
-  nav#codomen {
+  #codomen #main-container {
     justify-content: center;
   }
 
